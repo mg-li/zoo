@@ -28,6 +28,13 @@ Route::middleware(['auth:api'])->group(function () {
     Route::get('employee/team/selector', 'API\EmployeeController@selectorForTeam');
     Route::get('employee/status/{health}', 'API\EmployeeController@status');
 
+    Route::get('animal', 'API\AnimalController@index');
+    Route::post('animal', 'API\AnimalController@store');
+    Route::get('animal/{animal}', 'API\AnimalController@show');
+    Route::put('animal/{animal}', 'API\AnimalController@update');
+    Route::delete('animal/{animal}', 'API\AnimalController@destroy');
+    Route::get('animal/selector', 'API\AnimalController@selector');
+
     // 機械
     Route::get('category', 'API\CategoryController@index');
     Route::post('category', 'API\CategoryController@store');

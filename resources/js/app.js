@@ -76,6 +76,10 @@ const router = new VueRouter({
         { name: 'employee', path: '/employee', component: require('./components/employees/Index.vue').default },
         { name: 'employee.create', path: '/employee/create', component: require('./components/employees/CreateUpdate.vue').default },
         { name: 'employee.show', path: '/employee/show/:employee_id', component: require('./components/employees/CreateUpdate.vue').default, props: true },
+        // 従業員
+        { name: 'animal', path: '/animal', component: require('./components/animals/Index.vue').default },
+        { name: 'animal.create', path: '/animal/create', component: require('./components/animals/CreateUpdate.vue').default },
+        { name: 'animal.show', path: '/animal/show/:animal_id', component: require('./components/animals/CreateUpdate.vue').default, props: true },
         // 設備
         { name: 'facility', path: '/facility', component: require('./components/facilities/Index.vue').default },
         { name: 'facility.create', path: '/facility/create', component: require('./components/facilities/CreateUpdate.vue').default },
